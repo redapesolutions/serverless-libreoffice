@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "serverless_libreoffice_pdf" {
-  bucket = "serverless-libreoffice-pdf"
+  bucket = "libreoffice-pdf"
   acl    = "public-read"
 
   lifecycle_rule {

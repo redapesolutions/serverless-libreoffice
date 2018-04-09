@@ -9,9 +9,9 @@ resource "aws_lambda_function" "convert" {
   timeout          = 25
   source_code_hash = "${base64sha256(file(data.archive_file.convert.output_path))}"
 
-  tracing_config {
-    mode = "Active"
-  }
+  # tracing_config {
+  #   mode = "Active"
+  # }
 
   environment {
     variables {
